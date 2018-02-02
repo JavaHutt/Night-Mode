@@ -1,0 +1,31 @@
+.page {
+    width: 50%;
+    margin: auto;
+}
+.header__main-title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+.text {
+    margin-top: 20px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    text-align: justify;
+}
+.sub-title {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.text__paragraph {
+    text-indent: 10px;
+}
+.first-paragraph {
+    font-weight: bold;
+}
