@@ -7,6 +7,15 @@
     <title>Article</title> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+        label {
+            transition-duration: 1s;
+        }
+        .button__night-mode:checked ~ .wrapper .button label {
+            background-color: rgb(255,255,255);
+            color: rgb(0,0,0);
+        }
+    </style>
 </head>
 <body class="page">  
     <input class="button__night-mode" type="checkbox" name="Night Mode" id="NM">    
