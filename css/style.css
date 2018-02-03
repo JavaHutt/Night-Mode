@@ -2,13 +2,16 @@
     width: 50%;
     margin: auto;
 }
+.wrapper {
+    transition-duration: 1s;
+}
 .header__main-title {
     text-align: center;
     font-size: 70px;
     font-weight: bold;
 }
 .text {
-    margin-top: 20px;
+    margin-top: 20px;    
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -29,3 +32,34 @@
 .first-paragraph {
     font-weight: bold;
 }
+.button {
+    height: 50px;    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button__night-mode,
+.button__one-column-mode {
+    display: none;
+}
+.button__label-1,
+.button__label-2 {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+}
+#NM:checked ~ .wrapper {
+    background-color: #000000;
+    color: #ffffff;
+}
+#ONE-C:checked ~ .text {
+    margin-top: 20px;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
